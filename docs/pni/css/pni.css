@@ -1,0 +1,38 @@
+
+
+.bglogo { 
+    width: 100%; 
+    background-image: radial-gradient(rgba(0,0,0,.2), rgba(0,0,0,.8));
+}
+      
+#map { 
+    height: 400px;
+}
+
+.high {
+    min-height: 800px;
+}
+
+.reduce {
+    font-size: .8rem;
+}
+
+.reduceB {
+    font-size: .9rem
+}
+
+
+.miniRev {
+    font-size: .9rem;
+    max-height: 85px;
+    overflow: hidden;
+}
+
+.noBull {
+    list-style: none;
+}
+
+#moreInfo {
+    display: none;
+}
+
