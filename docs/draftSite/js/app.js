@@ -67,8 +67,8 @@ function playerSorter(player) {
 }
 
     // Fetch prem data
-    // fetch('../json/PremData.json')
-    fetch('https://raw.githubusercontent.com/drraq/PremierLeague.json/master/data.json')
+    fetch('../json/PremData.json')
+    // fetch('https://raw.githubusercontent.com/drraq/PremierLeague.json/master/data.json')
             .then(function(response) {
             if (response.status !== 200) {
             console.log('Looks like there was a problem with the prem data. Status Code: ' +
