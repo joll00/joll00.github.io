@@ -63,7 +63,25 @@ body {
    }
 }
 
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+ }
+
 @keyframes fadeOut {
+    0% {
+        opacity: 1;
+    } 
+    100% {
+        opacity: 0;
+    }
+ }
+
+ @-webkit-keyframes fadeOut {
     0% {
         opacity: 1;
     } 
@@ -107,6 +125,21 @@ body {
     }
 }
 
+@-webkit-keyframes logoSlideIn {
+    0% {
+        transform:translateX(-300px)
+    } 10% {
+        transform:rotate(1deg)
+    }
+    50% {
+        transform:rotate(360deg)
+    }
+    100% {
+        
+        transform:translateX(0px)
+    }
+}
+
 .logoSlideInTrial {
     animation-name: logoSlideIn;
     animation-duration: 4s;
@@ -120,8 +153,17 @@ body {
     }
 }
 
+
 .play {
     z-index: 2;
     animation-name: play;
     animation-duration: 1.5s;
+}
+
+@media only screen and (max-width: 1000px) {
+    .play {
+      z-index: 2;
+      animation-name: fadeIn;
+      animation-duration: 2s;
+    }
 }
